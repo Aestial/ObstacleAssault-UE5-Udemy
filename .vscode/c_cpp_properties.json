@@ -6,7 +6,7 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "D:\\_Jaime\\Unreal Projects\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault.json"
+            "compileCommands": "D:\\_Jaime\\Unreal Projects\\ObstacleAssault-UE5-Udemy\\.vscode\\compileCommands_ObstacleAssault.json"
         },
         {
             "name": "Win32",
@@ -14,7 +14,7 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "D:\\_Jaime\\Unreal Projects\\ObstacleAssault\\.vscode\\compileCommands_Default.json"
+            "compileCommands": "D:\\_Jaime\\Unreal Projects\\ObstacleAssault-UE5-Udemy\\.vscode\\compileCommands_Default.json"
         }
     ],
     "version": 4
