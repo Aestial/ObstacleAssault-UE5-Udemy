@@ -18,13 +18,13 @@ void AMovingPlatform::BeginPlay()
 
 	StartLocation = GetActorLocation();
 
-	FString Name = GetName();
+	const FString Name = GetName();
 	
 	UE_LOG(LogTemp, Display, TEXT("BeginPlay: %s"), *Name);
 }
 
 // Called every frame
-void AMovingPlatform::Tick(float DeltaTime)
+void AMovingPlatform::Tick(const float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
@@ -33,11 +33,11 @@ void AMovingPlatform::Tick(float DeltaTime)
 
 }
 
-void AMovingPlatform::MovePlatform(float DeltaTime)
+void AMovingPlatform::MovePlatform(const float DeltaTime)
 {
 	if (ShouldPlatformReturn())
 	{
-		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
+		const FVector MoveDirection = PlatformVelocity.GetSafeNormal();
 		StartLocation = StartLocation + MoveDirection * MovedDistance;
 		SetActorLocation(StartLocation);
 		PlatformVelocity = -PlatformVelocity;
@@ -50,7 +50,7 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 	}
 }
 
-void AMovingPlatform::RotatePlatform(float DeltaTime)
+void AMovingPlatform::RotatePlatform(const float DeltaTime)
 {
 	AddActorLocalRotation(RotationVelocity * DeltaTime);
 }
